@@ -21,20 +21,43 @@ function allCombinations(str) {
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  let sentence = str.split(" ");
+  for (let word in sentence) {
+    console.log(word);
+
+    sentence[word] = sentence[word][0].toUpperCase() + sentence[word].slice(1);
+  }
+
+  sentence = sentence.join(" ");
+  return sentence;
 }
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  let sum = x;
+  for (let i = 1; i < n; i++) {
+    sum *= x;
+  }
+  return sum;
 }
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+  let count = new Object();
+  for (letter of str) {
+    if (!count.hasOwnProperty(letter)) {
+      count[letter] = 1;
+    } else {
+      count[letter] += 1;
+    }
+  }
+  for (letter of str) {
+    console.log(count[letter]);
+  
+  if (count[letter] == 1) {
+    console.log(letter);
+     return letter
+  }}
 }
 
 //Question 6 (Bonus)
