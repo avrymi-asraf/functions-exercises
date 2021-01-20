@@ -1,18 +1,21 @@
 //Question 1
 function myReverse(str) {
-  let result = '';
-    for(let letter = str.length-1; letter >= 0; letter--){
-  result += str[letter]
-    }
-    return result;
+  let result = "";
+  for (let letter = str.length - 1; letter >= 0; letter--) {
+    result += str[letter];
+  }
+  return result;
 }
 
 //Question 2
 function allCombinations(str) {
   let combinations = [];
-  // your code here
+  for (let letter = 0; letter < str.length; letter++) {
+    for (let d = str.length; letter < d; d--) {
+      combinations.push(str.slice(letter, d));
+    }
+  }
 
-  //
   return combinations;
 }
 
