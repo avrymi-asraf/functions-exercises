@@ -1,7 +1,10 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+  let result = '';
+    for(let letter = str.length-1; letter >= 0; letter--){
+  result += str[letter]
+    }
+    return result;
 }
 
 //Question 2
