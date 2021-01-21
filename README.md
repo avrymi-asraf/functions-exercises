@@ -26,7 +26,7 @@ Write your code in the file `Exercise.js` in the pre-made functions.
 <br/>
 
 ## How to run tests?
-
+### ! the test dose not work on my compyuter, so I made file `myExerciesTest.js` with all exercries and their test in consloe.log
 You _can_ test your code on your own in the `Exercise.js` file.
 
 **But**, to pass the task you should also pass the **automated tests**. You should have 6/6 (you start with 1/6 because of the bonus)
